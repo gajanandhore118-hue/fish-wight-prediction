@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fish Weight Prediction</title>
+</head>
+<body>
+
+<h2>Fish Weight Prediction</h2>
+
+<form action="/predict" method="post">
+
+    Length1: <input type="text" name="Length1"><br>
+    Length2: <input type="text" name="Length2"><br>
+    Length3: <input type="text" name="Length3"><br>
+    Height: <input type="text" name="Height"><br>
+    Width: <input type="text" name="Width"><br>
+
+    <!-- Example species (adjust based on your dataset) -->
+    Species_Bream: <input type="text" name="Species_Bream"><br>
+    Species_Roach: <input type="text" name="Species_Roach"><br>
+
+    <input type="submit" value="Predict">
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
